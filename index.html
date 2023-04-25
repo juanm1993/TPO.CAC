@@ -1,18 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> Mundial '78 </title>
+    <link rel="stylesheet" src="style.css">
+
+    <style>
+        .box {
+            border: 5px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+        }
+
+
+        .container {
+            border: 5px solid black;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .box.left {
+            float: left;
+        }
+
+        .box.center {
+            margin: 0 auto;
+            display: block;
+        }
+
+        .box.right {
+            float: right;
+        }
+
+        img {
+            max-width: 10%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+    </style>
+
 </head>
+<header>
+    <h1>Argentina y su copas. </h1>
+</header>
+
 <body>
-    
-<h1>
-    TPO Desarrollo Web html, css, y javascript
-</h1>
+    <div class="box">
+        <div class="container left">
+            <img src="img/78.png">
+            <h1>
+                Mundial '78
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, minus? Expedita aliquam nisi architecto
+                fugiat impedit nesciunt ut non eum dolores perspiciatis cumque molestiae, corrupti unde mollitia?
+                Asperiores, eaque velit.</p>
+        </div>
+    </div>
+    <div class="box">
+        <div class="container center">
+            <img src="img/86.png">
+            <h2>
+                Mundial '86
+            </h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, minus? Expedita aliquam nisi
+                architecto
+                fugiat impedit nesciunt ut non eum dolores perspiciatis cumque molestiae, corrupti unde mollitia?
+                Asperiores, eaque velit.</p>
+        </div>
+    </div>
+    <div class="box">
+        <div class="container right">
+            <img src="img/22.png">
+            <h2>
+                Mundial '22
+            </h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, minus? Expedita aliquam nisi
+                architecto
+                fugiat impedit nesciunt ut non eum dolores perspiciatis cumque molestiae, corrupti unde mollitia?
+                Asperiores, eaque velit.</p>
+        </div>
+    </div>
+    <div>
+        <div class="container">
+            <h1>Sitios relacionados </h1>
+            <MENU>
+                <a href="https://www.youtube.com/watch?v=qtLwUrgy2Cs ">Mundial '78</a> 
+                <a href=" https://www.youtube.com/watch?v=sDbzIMdGyYU ">Mundial '86</a>
+                <a href="#">Mundial '22</a>
+            </MENU>
+        </div>
+        <div>
+        </div>
+        <div class="box">
+            <div class="container">
+                <h1>Formulario de contacto</h1>
+
+                <form action="#" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
+
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required><br><br>
+
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+
+    </div>
 
 
 
 </body>
+<footer>
+    <div class="container"> footer </div>
+</footer>
+
+</html>
+
+</body>
+
 </html>
