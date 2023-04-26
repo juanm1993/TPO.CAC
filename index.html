@@ -6,30 +6,52 @@
     <link rel="stylesheet" src="style.css">
 
     <style>
+        .header {
+
+            border-color: rgb(0, 179, 255);
+            background-color: royalblue;
+            padding: 0.5em;
+        }
+
+        .footer {
+            border-color: rgb(0, 179, 255);
+            background-color: royalblue;
+            padding: 0.5em;
+
+        }
+
         .box {
+
             border: 5px solid black;
-            border-radius: 10px;
-            padding: 10px;
-            margin: 10px;
+            border-radius: 5px;
+            padding: 5px;
+            margin: 5px;
         }
 
 
-        .container {
-            border: 5px solid black;
-            padding: 10px;
-            margin-bottom: 10px;
+        .container:left {
+        
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 200px;
         }
 
         .box.left {
+            justify-content: space-between;
             float: left;
         }
 
         .box.center {
+            justify-content: space-between;
             margin: 0 auto;
             display: block;
         }
 
         .box.right {
+            justify-content: space-between;
             float: right;
         }
 
@@ -42,89 +64,111 @@
 
 </head>
 <header>
-    <h1>Argentina y su copas. </h1>
+
+    <div class="box-header">
+        <h1>Argentina y su copas. </h1>
+    </div>
 </header>
 
 <body>
+<main>
+    <table>
+        <tbody>
+            <td>
+                <div class="box">
+                    <div class="container left">
+                        <img src="img/78.png">
+                        <h1>
+                            Mundial '78
+                        </h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, minus? Expedita aliquam
+                            nisi architecto
+                            fugiat impedit nesciunt ut non eum dolores perspiciatis cumque molestiae, corrupti unde
+                            mollitia?
+                            Asperiores, eaque velit.</p>
+                    </div>
+                </div>
+            </td>
+
+
+            <td>
+                <div class="box">
+                    <div class="container center">
+                        <img src="img/86.png">
+                        <h2>
+                            Mundial '86
+                        </h2>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, minus? Expedita aliquam
+                            nisi
+                            architecto
+                            fugiat impedit nesciunt ut non eum dolores perspiciatis cumque molestiae, corrupti unde
+                            mollitia?
+                            Asperiores, eaque velit.</p>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="box">
+                    <div class="container right">
+                        <img src="img/22.png">
+                        <h2>
+                            Mundial '22
+                        </h2>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, minus? Expedita aliquam
+                            nisi
+                            architecto
+                            fugiat impedit nesciunt ut non eum dolores perspiciatis cumque molestiae, corrupti unde
+                            mollitia?
+                            Asperiores, eaque velit.</p>
+                    </div>
+                </div>
+                <div>
+            </td>
+
+        </tbody>
+    </table>
     <div class="box">
-        <div class="container left">
-            <img src="img/78.png">
-            <h1>
-                Mundial '78
-            </h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, minus? Expedita aliquam nisi architecto
-                fugiat impedit nesciunt ut non eum dolores perspiciatis cumque molestiae, corrupti unde mollitia?
-                Asperiores, eaque velit.</p>
-        </div>
-    </div>
-    <div class="box">
-        <div class="container center">
-            <img src="img/86.png">
-            <h2>
-                Mundial '86
-            </h2>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, minus? Expedita aliquam nisi
-                architecto
-                fugiat impedit nesciunt ut non eum dolores perspiciatis cumque molestiae, corrupti unde mollitia?
-                Asperiores, eaque velit.</p>
-        </div>
-    </div>
-    <div class="box">
-        <div class="container right">
-            <img src="img/22.png">
-            <h2>
-                Mundial '22
-            </h2>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, minus? Expedita aliquam nisi
-                architecto
-                fugiat impedit nesciunt ut non eum dolores perspiciatis cumque molestiae, corrupti unde mollitia?
-                Asperiores, eaque velit.</p>
-        </div>
-    </div>
-    <div>
         <div class="container">
             <h1>Sitios relacionados </h1>
             <MENU>
-                <a href="https://www.youtube.com/watch?v=qtLwUrgy2Cs ">Mundial '78</a> 
+                <a href="https://www.youtube.com/watch?v=qtLwUrgy2Cs ">Mundial '78</a>
                 <a href=" https://www.youtube.com/watch?v=sDbzIMdGyYU ">Mundial '86</a>
                 <a href="#">Mundial '22</a>
-            </MENU>
         </div>
-        <div>
-        </div>
-        <div class="box">
-            <div class="container">
-                <h1>Formulario de contacto</h1>
-
-                <form action="#" method="post">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required><br><br>
-
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" id="apellido" name="apellido" required><br><br>
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required><br><br>
-
-                    <label for="telefono">Teléfono:</label>
-                    <input type="tel" id="telefono" name="telefono" required><br><br>
-
-                    <input type="submit" value="Enviar">
-                </form>
-            </div>
-        </div>
-
+        </MENU>
     </div>
 
+    <div class="box">
+        <div class="container">
+            <h1>Formulario</h1>
 
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required><br><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
 
 </body>
 <footer>
-    <div class="container"> footer </div>
+    <div class="box">
+        <div class="container"> footer </div>
+    </div>
 </footer>
 
 </html>
-
+</main>
 </body>
 
 </html>
