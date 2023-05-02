@@ -1,51 +1,120 @@
-.header  {
-   
-   border-color: rgb(0, 179, 255);
-   background-color: royalblue;
-    padding: 0.5em;
+. {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
 }
-.footer {
-    border-color: rgb(0, 179, 255);
-    background-color: royalblue;
-    padding: 0.5em;
+
+
+.nav {
+    background: skyblue;
+    height: 80px;
+    width: 100%;
+
+}
+
+.enlace {
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.logo {
+    height: 40px;
+}
+
+.nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+.nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px
+}
+
+.nav ul li a {
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px text-transform: uppercase
+}
+
+li a.active:hover {
+
+    background: blue;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 40px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    cursor: pointer: display: none
+}
+
+#check {
+    display: none;
+}
+
+
+
+.header-bg {
+
+    background-image: url("copa2023.jpg");
+    background-repeat: repeat-x;
+    background-size: contain
+}
+
+
+body {
+    background-image: url(Bandera.jpg );
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: calc(100vh - 80pz-)
+
 
 }
 
 .box {
-    background-position: center;
 
     border: 5px solid black;
-    border-radius: 5px;
     padding: 10px;
-    margin: 10px;
+    margin: 25px;
+
 }
 
-
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 200px;
-}
 
 .box.left {
 
+    justify-content: space-between;
     float: left;
+    display: flex;
 }
 
 .box.center {
-    margin: 0 auto;
-    display: block;
+    justify-content: space-between;
+    float: center;
+    display: flex;
 }
 
 .box.right {
+    justify-content: space-between;
     float: right;
+    display: flex;
 }
 
-img {
-    max-width: 10%;
-    height: auto;
-    margin-bottom: 10px;
+
+.same-size-img {
+    width: 300px;
+    height: 350px;
+}
+
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
