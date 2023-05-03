@@ -1,4 +1,4 @@
-. {
+* {
     padding: 0;
     margin: 0;
     text-decoration: none;
@@ -7,7 +7,36 @@
 }
 
 
-.nav {
+
+
+
+.box {
+
+    background-color: #275983;
+    border: 5px solid black;
+    padding: 50px;
+    margin: 25px;
+
+}
+
+
+
+.same-size-img {
+
+    width: 300px;
+    height: 350px;
+}
+
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+
+
+nav {
     background: skyblue;
     height: 80px;
     width: 100%;
@@ -23,24 +52,27 @@
     height: 40px;
 }
 
-.nav ul {
+nav ul {
     float: right;
     margin-right: 20px;
 }
 
-.nav ul li {
+nav ul li {
     display: inline-block;
     line-height: 80px;
     margin: 0 5px
 }
 
-.nav ul li a {
+nav ul li a {
     color: #fff;
     font-size: 18px;
-    padding: 7px 13px text-transform: uppercase
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase
 }
 
-li a.active:hover {
+li a.active,
+li a:hover {
 
     background: blue;
     transition: .5s;
@@ -51,65 +83,29 @@ li a.active:hover {
     color: #fff;
     float: right;
     line-height: 80px;
-    cursor: pointer: display: none
+    margin-right: 40px;
+    cursor: pointer;
+    display: none
 }
 
 #check {
     display: none;
 }
 
-
-
-.header-bg {
-
-    background-image: url("copa2023.jpg");
-    background-repeat: repeat-x;
-    background-size: contain
-}
-
-
-body {
+section {
     background-image: url(Bandera.jpg );
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    height: calc(100vh - 80pz-)
-
-
+    height: calc(100vh - 80px)
 }
-
-
-
-
-.box {
-
-    border: 5px solid black;
-    padding: 10px;
-    margin: 25px;
-
-}
-
-
-
-.same-size-img {
-    width: 300px;
-    height: 350px;
-}
-
-
-.contenedor {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-
 
 @media (max-width: 952px) {
-    .enlace{
+    .enlace {
         padding-left: 20px;
     }
-    nav ul li a{
+
+    nav ul li a {
         font-size: 16px;
     }
 
@@ -117,8 +113,44 @@ body {
 
 @media (max-width: 858px) {
     .checkbtn {
-        display:block;
-        
+        display: block;
+
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #275983;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transform: all .5s;
+    }
+
+
+    nav ul li {
+        display: block;
+        margin: 50px 0px;
+        line-height: 30px;
+    }
+
+
+    nav ul li a {
+        font-size: 20px;
+
+    }
+
+    li a:hover,
+    li a.active {
+
+        background: none;
+        color: #275983
+    }
+
+    #check:checked~ul {
+
+        left: 0;
     }
 
 }
